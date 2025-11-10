@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{color: #5E7AEC;}
+        #printresult{display: inline-block; color: red; font-weight: bold;}
+        #printcategory{display: inline-block; color: dodgerblue; font-weight: bold;}
+        #bmi-box{background-color: #F4F5F9; padding: 20px; width: 1000px; text-align: center;}
+        #gender-box{display: inline-block; margin-right: 50px;}
+        .input-box{margin-right: 30px; display:inline-block;}
+        #print{font-size: 20px; margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <h2>신체질량지수(BMI) 계산</h2>
+    <p>자신의 성별, 신장, 체중을 입력한 후 계산하기를 눌러 결과를 확인 하세요.</p>
+    <div id="bmi-box">
+        <div id="gender-box"><label for="gender">·성별 <input type="radio" name="gender">남성 <input type="radio" name="gender">여성</label></div>
+        <div class="input-box"><label for="height">·신장 <input type="number" id="height">cm</label></div>
+        <div class="input-box"><label for="weight">·체중 <input type="number" id="weight">kg</label></div>
+        <button id="send">계산하기</button>
+        <br>
+        <div id="print"></div>
+    </div>
+    <script>
+    //     function add(a,b){
+    //     sum = a+b;
+    //     return sum;
+    // }
+
+    // // ==, ===, !==
+    // // let a = 10;
+    // // let b = '10';
+    // // console.log(a===b)
+
+    // a=10
+    // b=20
+    // tot = add(a,b)
+
+    // console.log("tot : "+tot);
+    
+    window.onload = function(){
+        let bt = document.querySelector("#send");
+        bt.addEventListener("click",function(){
+
+            const a = document.getElementById("weight").value;
+            const b = document.getElementById("height").value;
+
+            function bmicalc(a,b){
+                bmi = a/((b/100)*(b/100))
+                console.log(bmi);
+                return bmi;
+            }
+
+            
+            result= bmicalc(a,b)
+            console.log("신체질량지수 : " +result);
+
+            if(result<18.5){
+                category = "저체중"
+            }else if(result>=18.5, result<22.9){
+                category = "정상"
+            }else if(result>=23, result<24.9){
+                category = "비만전단계"
+            }else if(result>=25, result<29.9){
+                category = "1단계 비만"
+            }else if(result>=25, result<34.9){
+                category = "2단게 비만"
+            }else if(result>=35){
+                category = "3단계 비만"
+            }
+            console.log("판정결과 : " + category)
+
+            let div = document.querySelector("#print");
+            div.innerHTML = `당신의 신체질량지수(BMI)는 ${result}(으)로 ${category}입니다.`
+            
+
+        });
+
+    }
+
+    </script>
+</body>
+</html>

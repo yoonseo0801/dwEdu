@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        // textContent
+    </div>
+        
+    <script>
+        //set(집합) : 중복된 데이터를 갖지 않는다.
+        const letters1 = new Set(["a","b","c"]);
+        const letters2 = new Set(["b","c","d"]);
+
+        const out = document.querySelector("#demo");
+        let text = "";
+
+        // const C = letters1.intersection(letters2);
+        // console.log("교집합 :" + C);
+        const C = letters1.difference(letters2);
+        console.log("차집합(순수한 A) :" + C);
+
+        for(const X of C){
+            text += X;
+        }
+
+        out.textContent = "교집합 : "+text;
+
+
+        // // 집합의 원소 확인
+        // console.log("==>"+letters.has("c"));
+
+        // // letters.forEach(function(value){
+        // //     text += value;
+        // // });
+
+        // for(const X of letters){
+        //     text += X;
+        // }
+
+        // // instance of 객체 존재여부 확인
+        // // 객체의 실체가 있는가?
+        // console.log(letters instanceof Set);
+
+
+        // console.log(text);
+        // outLine = "<p>집합의 원소는 " + text + "</p>";
+        // console.log(outLine);
+        // out.innerHTML = outLine; //"<p>집합의 원소는 " + text + "</p>";
+
+        // letters.add("d");
+        // letters.add("e");
+        // // letters[0] = "f"; 이렇게는 안됨(순서로X) Set은 특정한걸 꺼낼순 없음.
+
+        // list1 = ["a","b","c","d","e"];
+        // list1Text="";
+        // list1.forEach(function(val){
+        //     list1Text += val;
+        // });
+        // console.log("list :"+list1Text[2])
+
+        // letters.forEach(function(value){
+        //     text += value;
+        // });
+        // console.log("-->"+text);
+        // console.log("-->"+typeof letters);
+        // outLine += "<p>집합의 원소는 "+"<strong>"+text+"</strong><p>";
+
+        // out.innerHTML = outLine; //"<p>집합의 원소는 "+"<strong>"+text+"</strong><p>";
+    </script>
+</body>
+</html>

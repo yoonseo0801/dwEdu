@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Classes</h1>
+<p>Creating two car objects from a car class:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+// class Car {
+//   constructor(name, year, color) {
+//     this.name = name;
+//     this.year = year;
+//     this.color = color;
+//   }
+
+class Car {
+  constructor(brand) {
+    alert('상위 클래스 생성자 수행..');
+    this.carname = brand;
+    
+  }
+
+//   age(){
+//     const date = new Date();
+//     return date.getFullYear()-this.year;
+//   }
+
+//   getColor(){
+//     return "색상 : " + this.color;
+//   }
+
+  present(){
+    return 'I have a' + this.carname; 
+  }
+}
+
+class Model extends Car {
+  constructor(brand, model) {
+    console.log('하위 클래스 생성자 수행..')
+    super(brand);
+    this.model = model;
+  }
+  show() {
+    return this.present() + ', it is a '+ this.model;
+  }
+}
+
+// 자동차의 색상속성을 추가하고
+// 색상을 알려주는 메서드를 추가하시오.
+
+// const myCar1 = new Car("Ford", 2014, "Black");
+// const myCar2 = new Car("Audi", 2019, "white");
+
+const myCar3 = new Model(" Kia","K5")
+const myCar1 = new Car(" Kia")
+
+document.getElementById("demo").innerHTML = myCar3.present()+"이고 "+myCar3.show();
+document.getElementById("demo1").innerHTML = myCar1.present()+"이고 "+myCar1.carname;
+
+// document.getElementById("demo").innerHTML =
+// myCar1.name + ", " + myCar1.year+ ", " +"나이: "+ myCar1.age() + ", "  + myCar1.getColor();
+
+// document.getElementById("demo1").innerHTML =
+// myCar2.name + ", " + myCar2.year + ", " +"나이: "+ myCar2.age() + ", " + myCar2.getColor(); 
+</script>
+
+</body>
+</html>

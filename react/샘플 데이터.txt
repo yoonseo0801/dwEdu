@@ -1,0 +1,3 @@
+샘플 데이터를 무료로 제공하는 REST API 서비스
+
+json placeholder

@@ -1,0 +1,33 @@
+새로운 리액트 프로젝트를 만드는 명령어
+
+★(최신방식)
+npm create vite@latest my-app (-- --template react)
+React > JavaScript > No >Yes
+
+실행 : npm run dev > 나오는 주소로 들어가기 
+
+React 프로젝트에서 “react-router-dom” 패키지의 최신 버전 설치
+npm install react-router-dom@latest
+
+npm run dev
+
+
+터미널 단축키 : ctrl + ` 
+
+
+
+
+
+파일탐색기 > 주소창에 cmd
+
+npx create-react-app my-app(옛날방식)
+cd my-app (엔터 후) code
+
+
+Visual Studio Code에서 React 프로젝트 실행
+비주얼 스튜디오 코드에서 터미널> 뉴터미널> 아래화살표>커멘드프롬프트>
+npm start
+
+
+
+

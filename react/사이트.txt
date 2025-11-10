@@ -1,0 +1,34 @@
+React cheat sheet : 
+https://devhints.io/react
+https://www.shecodes.io/cheatsheets/react
+
+
+자바스크립트 로드맵
+https://roadmap.sh/javascript
+
+
+React Playground : 8줄제한
+->대체 사이트 : codesandbox react
+
+자바스크립트 로드맵
+
+
+express
+
+
+Apache HTTP Server
+웹 서버 소프트웨어 : 웹사이트를 “보여주는 프로그램”
+https://httpd.apache.org
+
+
+Apache가 하는 일
+        역할	                        설명
+🌍 웹페이지 제공	사용자가 요청한 페이지(HTML, CSS, JS 등)를 전송
+⚙️ 요청 처리	브라우저의 GET/POST 요청을 받아서 응답 생성
+🔒 보안 관리	HTTPS(SSL 인증서) 설정, 접근 제한
+🧩 확장 기능	모듈을 추가해 PHP, Python 등 다양한 언어 실행 가능
+🧾 로그 관리	접속 기록, 에러 로그 저장
+
+
+포스트맨 : API(에이피아이) 를 쉽게 테스트하고 관리할 수 있는 도구이자 웹사이트
+https://www.postman.com/

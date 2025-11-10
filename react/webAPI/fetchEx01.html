@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Fetch a file to change this text.</p>
+    <script>
+
+    let file = "test.txt"
+
+    fetch (file)
+    .then(x => x.text()) 
+    .then(y => document.getElementById("demo").innerHTML = y);
+
+
+    //Fetch await
+    getText("test.txt");
+
+    async function getText(file) { /* async : 비동기 함수 , 동기: 시간이 걸리지 않고*/
+    let x = await fetch(file); /* await 기다렸다가 */
+    let y = await x.text();
+    document.getElementById("demo").innerHTML = y;
+    }
+    </script>
+</body>
+</html>

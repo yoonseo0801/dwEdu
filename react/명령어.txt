@@ -1,0 +1,8 @@
+현재 프로젝트(폴더)에 react-router-dom 패키지를 설치합니다.
+npm install react-router-dom
+
+react-router-dom의 버전 6을 명시적으로 설치합니다.
+npm i react-router-dom@6
+
+현재 프로젝트의 의존성 트리에서 react, react-dom, react-router-dom 이 어떻게 설치되어 있는지(버전 포함) 보여줍니다.
+npm list react react-dom react-router-dom

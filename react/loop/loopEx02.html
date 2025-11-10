@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        //정수 숫자(1~10) 5개를 임의로 생성하여 모두 출력하고 그 숫자들의 합을 구하시오.
+        // //2,4,6,7,8 합은 27
+        let sum = 0;
+        for (let i = 0; i < 5; i++) {
+            // 1. 숫자 생성 (Math.random())
+            let ranNum = parseInt(Math.random()*10+1);
+            sum += ranNum; //sum += sum + ranNum
+            console.log(ranNum)
+            document.getElementById("demo").innerHTML += ranNum +" ";
+            // 2. 생성된 숫자 누적 (+=)
+            
+        }
+        // 3. 결과 출력 
+        let out = document.getElementById("demo");
+        document.getElementById("demo").innerHTML = "<br>" + out.innerHTML + "<Br>" + "합은 : "+ sum;
+    </script>
+</body>
+</html>

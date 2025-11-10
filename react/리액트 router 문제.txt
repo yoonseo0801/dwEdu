@@ -1,0 +1,6 @@
+리액트 router 문제 있으면 node_modules 폴더에 react-router-dom 있는지 확인
+없으면 아래 명령어 입력하는데 반드시 해당 프로젝트 폴더 이동 후 입력
+
+npm i react-router-dom@latest
+
+그리고 서버 재실행

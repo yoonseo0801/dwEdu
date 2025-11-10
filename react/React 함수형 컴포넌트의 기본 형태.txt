@@ -1,0 +1,12 @@
+React 함수형 컴포넌트(Function Component)**의 기본 형태
+
+import React from "react";
+
+export default function 파일명 (){
+
+    return(
+        <div>
+
+        </div>
+    )
+}

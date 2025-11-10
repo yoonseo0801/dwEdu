@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Number type
+        let n1 = 1234;
+        let n2 = 12.34;
+        console.log(typeof n1)
+        console.log(typeof n2)
+
+        //string type
+        let name = "홍길동"
+        let addr = '대전시 서구'
+        console.log(typeof name)
+        console.log(typeof addr)
+
+        // 사람이름의 성만을 추출하시오
+        // 예시 : 홍길동 ---> 홍
+        console.log(name[0])
+
+        //주민번호를 저장한 변수를 생성하고 
+        //출생년도만 추출하시오.
+        let jumin = "960801-2411511";
+        // 앞의 두 자리(YY)만 추출
+        let year = jumin.substring(0, 2);
+
+        // 뒷자리 첫 숫자로 세기(1900년대 / 2000년대) 구분
+        let century = jumin.charAt(7) === "1" || jumin.charAt(7) === "2" ? 1900 : 2000;
+
+        // 최종 출생년도
+        let birthYear = century + parseInt(year);
+
+        console.log(birthYear); // 👉 2003
+
+
+        let id = "020625"
+        //let year = id[0] + id[1]
+        //문자열 함수
+
+        console.log("년도: "+id.substring(0,2))
+
+        //boolean type
+        let pass = true // 시험 통과여부
+        let gender = true // 성별 (남,여)
+        console.log("남자 : "+gender)
+        let num1 = 20
+        let num2 = 30
+        let isBig = num1 > num2
+        console.log(isBig) // 출력 결과는?
+
+        //Null type
+        let n=null;
+        console.log("널 타입 : "+n)
+
+        //Underfined type
+        let ul;
+        console.log("ul : " + ul)
+        let u2 = undefined
+        console.log(u2)
+
+        //Array type
+        let arry = [1,2,3,4]
+        console.log(typeof arry)
+        console.log(Array.isArray(name))
+
+        //object type
+        let fruit = {
+            a:"apple",
+            b:"banana",
+            "c":"carrot"
+            // 10:"10000"
+        }
+
+        console.log(fruit.a)
+        console.log(fruit.b)
+        console.log(fruit.c)
+
+        //객체참조방법
+        // console.log(fruit["10"])
+
+        //배열 데이터 특징
+        let arr1 = [1,2,"홍길동",4,"대전시",123.45]
+
+        console.log(arr2)
+        // 홍길동에서 "홍"만 추출
+        console.log(arr2[2][0])
+        console.log(arr2[2].charAt(2))
+        console.log(arr2[2].substring(0,1))
+
+        
+        
+
+
+    </script>
+</body>
+</html>

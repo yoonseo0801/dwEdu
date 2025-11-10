@@ -1,0 +1,20 @@
+1.
+npm i react@latest react-dom@latest react-router-dom@latest
+이 명령어는 다음 세 가지 라이브러리를 최신 버전으로 업데이트하는 명령입니다.
+
+패키지	역할
+react	React 핵심 라이브러리 (컴포넌트, JSX 등)
+react-dom	React가 브라우저 DOM과 연결되도록 도와주는 라이브러리
+react-router-dom	페이지 이동(라우팅)을 관리하는 라이브러리
+
+
+2.
+현재 프로젝트에 설치된 React 관련 패키지들의 버전을 확인하는 명령
+npm ls react react-dom react-router-dom
+
+
+3.
+중복제거
+중복된 패키지를 정리(정리, 최적화) 하는 명령
+중복 설치된 패키지를 한 번만 남기고 정리해줘!
+npm dedupe

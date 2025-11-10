@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2차원 배열 출력</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .student {
+            background-color: #f4f4f4;
+            margin: auto;
+            padding: 3px;
+            width: 280px;
+            display: block;
+        }
+        button{margin-bottom: 20px;}
+    </style>
+</head>
+<body>
+    <h1>학생 점수 목록</h1>
+    <div class="data-container" id="dataDisplay"></div>
+    <button onclick="analyzeScores()">성적 분석하기</button>
+    <div id="result"></div>
+
+    <script>
+        // 1️⃣ 2차원 배열 데이터
+        const students = [
+            ["김영희", 85, 90], ["이철수", 42, 55], ["박민수", 77, 80], ["장하나", 95, 98], ["손지훈", 60, 70],
+            ["최진영", 55, 45], ["홍길동", 90, 88], ["유미란", 33, 40], ["정대웅", 70, 75], ["강태우", 82, 79]
+        ];
+
+        // 2️⃣ 데이터 출력 함수
+        function showStudents() {
+            let output1 = "";
+            
+
+            for (let i = 0; i < students.length; i++) {
+                const name = students[i][0];
+                const math = students[i][1];
+                const english = students[i][2];
+                const average = (math + english) / 2;
+                const result = average >= 60 ? "합격" : "불합격";
+
+                output1 += `
+                    <div class="student">
+                        이름: ${name} - 수학: ${math}점, 영어: ${english}점
+                    </div>
+                `;
+                
+            }
+
+            document.getElementById("dataDisplay").innerHTML = output1 + `<br>`;
+            
+        }
+        function analyzeScores() {
+            let output2 = "";
+
+            for (let i = 0; i < students.length; i++) {
+                const name = students[i][0];
+                const math = students[i][1];
+                const english = students[i][2];
+                const average = (math + english) / 2;
+                const result = average >= 60 ? "합격" : "불합격";
+            
+
+            output2 += `
+                    <div>
+                        ${name} : 평균 ${average.toFixed(1)}점 -> ${result}
+                    </div>
+                `;
+            }
+                document.getElementById("result").innerHTML = `<strong>성적 분석 결과</strong>`+ output2;
+        }
+
+        // 3️⃣ 페이지 로드 시 실행
+        window.onload = showStudents;
+    </script>
+</body>
+</html>

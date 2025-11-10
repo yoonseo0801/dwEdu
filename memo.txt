@@ -1,0 +1,35 @@
+메모
+
+USB 최종 풀 이동 : 2025.09.04(목)
+
+25.09.05(금) : 당일 파일만 이동
+
+25.09.06(토) : USB애서 노트북 코딩폴더로 풀 이동
+
+25.09.10(화) : 당일 파일만 이동
+
+
+모양 : 250721 004
+
+반응형 : 250723 006, style.css /250919 폴더에 있음(선생님이 보내주심)
+
+codepen : 다양한 작업을 한 코드 공유공간
+
+
+
+
+<깃허브>
+F1 > git:클론 > 주소 붙여넣기
+
+전계림 선생님 레포지토리
+https://github.com/masterJKR/persimmons
+
+윤서 레포지토리
+https://github.com/yoonseo0801/yoonseo-repository.git
+
+깃허브 저장방법
+1. 메세지에 뭐라도 쓰기
+2. 커밋 누르기
+
+git config --global user.name yoonseo0801
+git config --global user.email lyoonseo3@gmail.com

@@ -1,0 +1,8 @@
+리액트 라우터 라이브러리 설치 
+페이지 이동(라우팅) 기능 구현
+React 프로젝트에서 페이지 이동(라우팅) 기능을 쓰기 위해 필요한 라이브러리를 설치하는 명령어
+
+install : 설치
+
+명령어
+C:\Leeyoonseo\react\movie-reserve-app>npm install react-router-dom
