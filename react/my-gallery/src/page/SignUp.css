@@ -1,0 +1,17 @@
+.loginBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    gap: 5px;
+}
+
+button{
+    background-color: #333;
+    color: white;
+    width: 200px;
+    margin-top: 3px;
+    
+
+}

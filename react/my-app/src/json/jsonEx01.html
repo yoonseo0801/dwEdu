@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Object from JSON String</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+let text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+const obj = JSON.parse(text);
+console.log(`obj : ${obj.employees[0].lastName}`)
+
+document.getElementById("demo").innerHTML =
+obj.employees[0].firstName + " " + obj.employees[0].lastName;
+document.getElementById("demo1").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+document.getElementById("demo2").innerHTML =
+obj.employees[2].firstName + " " + obj.employees[2].lastName;
+const myObj = {name:"홍길동", age:20, "주소":"대전 서구"};
+let name = "name";
+document.getElementById("demo2").innerHTML = myObj["주소"];
+
+const obj1 = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
+console.log(`obj1 : ${obj1}`);
+const myJSON = JSON.stringify(obj1);
+
+console.log(`myJSON : ${myJSON}`);
+
+document.getElementById("demo2").innerHTML = myObj[name];
+document.getElementById("demo3").innerHTML = myObj["age"];
+</script>
+
+</body>
+</html>
+
