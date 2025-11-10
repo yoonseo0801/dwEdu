@@ -1,0 +1,16 @@
+깃허브 데스크탑 설치 및 사용방법
+
+1. 검색 포털에서 "깃허브 데스크탑" 검색
+
+2. https://docs.github.com/ko/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop
+이 창이 뜨는데 download github desktop으로 다운로드
+
+3. 새로 뜬 창에서 download now 누르기
+3-1 download for windows 누르기
+
+4. welcome to github desktop 화면에서 sign in 버튼을 눌러 깃허브 로그인하기
+4-1 만약 로그인이 안되어있으면 로그인 하라고 뜰테니 본인 깃허브 계정 로그인 하시면 됩니다.
+
+5. let's get started! 에서 레퍼지토리 선택하기
+
+6. create a new repository 에서 레퍼지토리 name과 path로 경로 설정하기 이후 하단의 Create repository 클릭
