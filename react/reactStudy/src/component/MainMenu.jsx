@@ -19,6 +19,9 @@ export default function MainMenu(){
             <Link to="/map2" className="menu">map출력2</Link>
             <Link to="/users" className='menu'>유저들</Link>
             <Link to="/todo" className='menu'>할 일 목록</Link>
+            <Link to="/like" className='menu'>좋아요 버튼</Link>
+            <Link to="/savename" className='menu'>이름 저장 버튼</Link>
+            <Link to="/attend" className='menu'>출석부</Link>
         </div>
     )
 }

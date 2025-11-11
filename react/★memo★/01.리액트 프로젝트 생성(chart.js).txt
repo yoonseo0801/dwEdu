@@ -1,6 +1,7 @@
 새로운 리액트 프로젝트를 만드는 명령어
 
 ★(최신방식)
+리액트 프로젝트 폴더 설치
 npm create vite@latest my-app (-- --template react)
 React > JavaScript > No >Yes
 
@@ -15,18 +16,17 @@ npm run dev
 터미널 단축키 : ctrl + ` 
 
 
+tailwind 설치
+npm i -D tailwindcss @tailwindcss/vite
 
 
-
-파일탐색기 > 주소창에 cmd
-
-npx create-react-app my-app(옛날방식)
-cd my-app (엔터 후) code
+유인물 설치단계 (React _ Vite기준) 보고 tailwind 플러그인 추가, css파일 준비하기
+css파일은 기존에 있는 내용 지우고 유인물에 써져있는 import 추가
 
 
-Visual Studio Code에서 React 프로젝트 실행
-비주얼 스튜디오 코드에서 터미널> 뉴터미널> 아래화살표>커멘드프롬프트>
-npm start
+chart.js 설치
+npm i chart.js react-chartjs-2 
+
 
 
 

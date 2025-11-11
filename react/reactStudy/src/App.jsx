@@ -10,13 +10,16 @@ import Schedule from './component/study2/Schedule';
 import Student from './component/study2/Student';
 import Memo from './component/study2/Memo';
 import BoardMng from './component/study2/BoardMng';
-import Buyer from './component/homework/Buyer';
+import Buyer from './component/homework/homework1/Buyer';
 import TestEffect from './component/study3/TestEffect';
 import TestFetch from './component/study3/TestFetch';
 import DataList from './component/study4/DataList';
 import DataList2 from './component/study4/DataList2';
 import UserInfo from './component/study4/UserInfo';
 import TodoList from './component/study4/TodoList';
+import LikeButton from './component/homework/homework2/LikeButton';
+import SaveName from './component/homework/homework2/SaveName';
+import Attend from './component/study5/Attend.jsx';
 
 
 function App() {
@@ -43,6 +46,9 @@ function App() {
           <Route path='/map2' element={<DataList2/>}/>
           <Route path='/users' element={<UserInfo/>}/>
           <Route path='/todo' element={<TodoList/>}/>
+          <Route path='/like' element={<LikeButton/>}/>
+          <Route path='/savename' element = {<SaveName/>}/>
+          <Route path='/attend' element={<Attend/>}/>
         </Routes>
       </Router>
     </>

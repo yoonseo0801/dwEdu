@@ -1,0 +1,10 @@
+차트 양식
+
+구글 chart.js
+https://www.chartjs.org/
+채용공고에 우위를 점하고 있음.
+
+
+구글 D3.js
+https://d3js.org/
+차트.js보다 고급짐. 설정하는게 많음.

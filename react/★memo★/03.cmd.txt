@@ -1,7 +1,8 @@
 파일탐색기 > 주소창에 cmd
 
-npx create-react-app my-app
+npx create-react-app my-app(옛날방식)
 cd my-app (엔터 후) code
 
+Visual Studio Code에서 React 프로젝트 실행
 비주얼 스튜디오 코드에서 터미널> 뉴터미널> 아래화살표>커멘드프롬프트>
 npm start
