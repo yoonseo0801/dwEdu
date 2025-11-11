@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ChartBasic1 from './component/ChartBasic1'
 import BarChart1 from './component/BarChart1'
+import BarChart2 from './component/BarChart2'
 
 function App() {
   const [show, setShow] = useState(null);
@@ -16,12 +17,16 @@ function App() {
     <>
     <div className='flex gap-3'>
       <button onClick={ () => setShow("A") } className={btClass("A")}>차트둘러보기</button>
-      <button onClick={ () => setShow("B") } className={btClass("B")}>막대그래프</button>
+      <button onClick={ () => setShow("B") } className={btClass("B")}>막대그래프1</button>
+      <button onClick={ () => setShow("C") } className={btClass("C")}>막대그래프</button>
+      <button onClick={ () => setShow("D") } className={btClass("D")}>막대그래프</button>
     </div>
 
     <div className='mt-8'>
       { show ==="A" && <ChartBasic1/> }
       { show ==="B" && <BarChart1/> }
+      { show ==="C" && <BarChart2/> }
+      { show ==="D" && <BarChart2/> }
     </div>
     </>
   )
