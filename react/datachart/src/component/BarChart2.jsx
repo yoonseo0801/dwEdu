@@ -43,7 +43,7 @@ export default function BarChart2(){
             },
             y1:{
                 position:"right",
-                grid:{drawOnChartArea:fales} // 격자 중복 방지 : 보조축은 선이 안들어감
+                grid:{drawOnChartArea:false} // 격자 중복 방지 : 보조축은 선이 안들어감
             }
         }
     }
