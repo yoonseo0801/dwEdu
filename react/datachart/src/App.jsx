@@ -6,6 +6,15 @@ import ChartBasic1 from './component/ChartBasic1'
 import BarChart1 from './component/BarChart1'
 import BarChart2 from './component/BarChart2'
 import BarChart3 from './component/BarChart3'
+import LineChart1 from './component/LineChart1'
+import LineChart2 from './component/LineChart2'
+import LineChart3 from './component/LineChart3'
+import LineChart4 from './component/LineChart4'
+import DoughnutChart1 from './component/DoughnutChart1'
+import PiChart from './component/PiChart'
+import DoughnutChart2 from './component/DoughnutChart2'
+import DoughnutChart3 from './component/DoughnutChart3'
+import MixChart from './component/MixChart'
 
 function App() {
   const [show, setShow] = useState(null);
@@ -20,7 +29,16 @@ function App() {
       <button onClick={ () => setShow("A") } className={btClass("A")}>차트둘러보기</button>
       <button onClick={ () => setShow("B") } className={btClass("B")}>막대그래프1</button>
       <button onClick={ () => setShow("C") } className={btClass("C")}>막대그래프2</button>
-      <button onClick={ () => setShow("D") } className={btClass("D")}>막대그래프3</button>
+      <button onClick={ () => setShow("D") } className={btClass("D")}>누적막대</button>
+      <button onClick={ () => setShow("E") } className={btClass("E")}>기본 라인</button>
+      <button onClick={ () => setShow("F") } className={btClass("E")}>다중 라인</button>
+      <button onClick={ () => setShow("G") } className={btClass("G")}>계단형 라인</button>
+      <button onClick={ () => setShow("H") } className={btClass("H")}>곡선 라인</button>
+      <button onClick={ () => setShow("R") } className={btClass("R")}>기본도넛</button>
+      <button onClick={ () => setShow("J") } className={btClass("J")}>원형 차트</button>
+      <button onClick={ () => setShow("K") } className={btClass("K")}>반 도넛</button>
+      <button onClick={ () => setShow("L") } className={btClass("L")}>이중 도넛</button>
+      <button onClick={ () => setShow("M") } className={btClass("M")}>혼합차트</button>
     </div>
 
     <div className='mt-8'>
@@ -28,6 +46,15 @@ function App() {
       { show ==="B" && <BarChart1/> }
       { show ==="C" && <BarChart2/> }
       { show ==="D" && <BarChart3/> }
+      { show ==="E" && <LineChart1/> }
+      { show ==="F" && <LineChart2/> }
+      { show ==="G" && <LineChart3/> }
+      { show ==="H" && <LineChart4/> }
+      { show ==="R" && <DoughnutChart1/> }
+      { show ==="J" && <PiChart/> }
+      { show ==="K" && <DoughnutChart2/> }
+      { show ==="L" && <DoughnutChart3/> }
+      { show ==="M" && <MixChart/> }
     </div>
     </>
   )
