@@ -1,0 +1,14 @@
+막대바 위의 총액 나타나게 하는 플러그인 설치
+npm install chartjs-plugin-datalabels
+
+쓰는 법
+1. 상단에 import하기
+import ChartDataLabels from 'chartjs-plugin-datalabels'
+
+2. options의 plugin 사용
+ex) const options={
+        plugins:{
+            datalabels:{
+                
+            }
+        },

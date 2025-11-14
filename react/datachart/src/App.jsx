@@ -15,6 +15,8 @@ import PiChart from './component/PiChart'
 import DoughnutChart2 from './component/DoughnutChart2'
 import DoughnutChart3 from './component/DoughnutChart3'
 import MixChart from './component/MixChart'
+import BarChartCard from './component/BarChartCard'
+import ExpendListInput from './component/ExpendListInput'
 
 function App() {
   const [show, setShow] = useState(null);
@@ -23,6 +25,7 @@ function App() {
     `px-4 py-2 rounded-lg text-white font-bold transition cursor-pointer
       ${show === name ? "bg-blue-600" : "bg-blue-400 hover:bg-blue-500"}`;
 
+    
   return (
     <>
     <div className='flex gap-3'>
@@ -39,7 +42,12 @@ function App() {
       <button onClick={ () => setShow("K") } className={btClass("K")}>반 도넛</button>
       <button onClick={ () => setShow("L") } className={btClass("L")}>이중 도넛</button>
       <button onClick={ () => setShow("M") } className={btClass("M")}>혼합차트</button>
+      <button onClick={ () => setShow("N") } className={btClass("N")}>지출내역</button>
     </div>
+   
+
+    
+
 
     <div className='mt-8'>
       { show ==="A" && <ChartBasic1/> }
@@ -55,6 +63,7 @@ function App() {
       { show ==="K" && <DoughnutChart2/> }
       { show ==="L" && <DoughnutChart3/> }
       { show ==="M" && <MixChart/> }
+      { show ==="N" && <ExpendListInput/> }
     </div>
     </>
   )

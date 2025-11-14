@@ -1,0 +1,22 @@
+파이어베이스
+https://firebase.google.com/?hl=ko
+day8 유인물 참고하여 설치하기 : 2. Firebase 콘솔에서 프로젝트 만들기
+
+npm install react-router-dom@latest
+npm i -D tailwindcss @tailwindcss/vite
+유인물 설치단계 (React _ Vite기준) 보고 tailwind 플러그인 추가, css파일 준비하기
+css파일은 기존에 있는 내용 지우고 유인물에 써져있는 import 추가
+npm i chart.js react-chartjs-2 
+
+Node.js 환경에서 Firebase SDK를 설치하는 명령어
+npm install firebase
+
+프로젝트 파일 안에 있는 package.json 파일의 "dependencies"에서
+설치가 제대로 됬는지 확인 할 수 있음. 버전이 있다면 설치 된 것.
+
+집에서 설치된 파일 불러오면 또 설치는 안해도 됨
+새로운 파일을 만들 때는 설치를 해야 함
+
+파이어베이스 사이트>프로젝트개요>앱추가 >앱>닉네임 입력(호스팅 나중에 하면 됨)> 앱등록> npm 사용> 코드 복사
+한번 만들면 같은 곳에서 새로 만들지 않아도 확인 가능
+유인물 3.3 React 에서 초기화 파일 만들기
